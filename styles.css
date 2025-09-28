@@ -1,0 +1,131 @@
+/* cite: https://www.w3schools.com/csS/css3_flexbox.asp, https://stackoverflow.com/questions/971123/css-fixed-to-bottom-and-centered */
+:root{
+    --porfolioPurple: rgb(89, 55, 121);  
+    --portfolioDarkerPurple: rgb(53, 31, 73);
+    --portfolioColor: white;
+    --radius: 10px;
+    --border: 5px solid black;
+}
+
+ul {
+    margin-bottom: 3%;
+}
+
+li {
+    margin-bottom: 1%;
+}
+
+body{
+    background-color: rgb(180, 180, 234);
+}
+
+.middle{
+    text-align: center;
+}
+
+.image{
+    border: var(--border);
+    border-radius: var(--radius);
+    -webkit-border-radius: var(--radius);
+    -moz-border-radius: var(--radius);
+    -ms-border-radius: var(--radius);
+    -o-border-radius: var(--radius);
+    margin-bottom: 10%;
+}
+
+nav, footer {
+  background-color: var(--porfolioPurple);
+  padding: 15px;
+}
+
+nav ul, footer {
+  list-style: none;   
+  margin: 0;
+  padding: 0;
+  display: flex;      
+  justify-content: center; 
+}
+
+nav a, footer a{
+    color: var(--portfolioColor);
+    font-size: larger;
+    text-decoration: none;
+    padding: 15px 50px;
+    
+}
+
+footer a:link{
+    color: var(--portfolioColor);
+}
+
+footer a:visited{
+    color: black;
+}
+
+nav a:hover, footer a:hover {
+  background: var(--portfolioDarkerPurple)
+}
+
+#aboutBtn {
+  width: 10rem;
+  height: 5rem;
+  font-size:x-large;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: var(--porfolioPurple);
+  color: var(--portfolioColor);
+  border-style:dotted;
+  border: 0.2rem dotted black;
+  border-radius: 5px;
+  margin-bottom: 4%;
+}
+
+#aboutBtn:hover , #RosieBtn:hover, #closeRosieBtn:hover{
+    background-color: var(--portfolioDarkerPurple);
+    border-color: var(--portfolioColor);
+}
+
+.image:hover{
+    /* width: 650px; */
+    height: 450px;
+    border-color: var(--porfolioPurple);
+}
+
+#RosieBtn,#closeRosieBtn{
+  width: 20rem;
+  height: 5rem;
+  font-size:x-large;
+  color: var(--portfolioColor);
+  display: block;             
+  margin: 0% 0% 10% 0%; 
+  background-color: var(--porfolioPurple);
+  border: 0.2rem solid black;
+  border-radius: 5px;
+}
+
+#RosieBox {
+  display: none;  
+}
+
+#closeRosieBtn{
+   width: 15rem;
+  height: 4rem;
+}
+
+#closeBtn, #closeRosieBtn{
+  background-color: var(--porfolioPurple);
+  color:var(--portfolioColor);
+  border-radius: 5px;
+}
+
+#aboutBox{
+  background-color: var(--portfolioColor);
+  /* margin-bottom: 10%; */
+  margin: 0% 10% 10% 10%; 
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  
+}
