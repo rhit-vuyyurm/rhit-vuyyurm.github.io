@@ -1,0 +1,33 @@
+.eduPoints{
+    color: rgb(82, 80, 80);
+    font-style: italic;
+    font-weight: bold;
+}
+
+.subText{
+    color: rgb(82, 80, 80);
+    font-style: italic;
+}
+
+.bulletHeading{
+    font-weight: bold;
+    color: rgb(12, 103, 12);
+}
+
+img{
+    width: 30%;
+    max-height: 500px;
+    height: 30%;
+}
+
+a:link {
+    color: blue;
+}
+
+a:visited {
+    color: pink;
+}
+
+a:hover{
+    color: red;
+}
